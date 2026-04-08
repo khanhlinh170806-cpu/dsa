@@ -1,20 +1,11 @@
+from itertools import accumulate
+
 class PrefixSum:
-    """
-    Prefix Sum dùng list built-in Python
-    """
-
     def __init__(self, arr):
-        self.n = len(arr)
-        self.P = [0] * (self.n + 1)
-
-        for i in range(1, self.n + 1):
-            self.P[i] = self.P[i - 1] + arr[i - 1]
+        self.P = [0] + list(accumulate(arr))
 
     def query(self, L, R):
-        """
-        Tính tổng từ L đến R (inclusive)
-        """
-        if L < 0 or R >= self.n or L > R:
-            raise IndexError("Phạm vi không hợp lệ")
+        if L < 0 or R >= len(self.P) - 1 or L > R:
+            raise IndexError("Invalid range")
 
         return self.P[R + 1] - self.P[L]
