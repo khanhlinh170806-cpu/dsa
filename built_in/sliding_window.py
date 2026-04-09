@@ -10,9 +10,3 @@ def sliding_window(iterable, n):
         window.pop(0)
         window.append(x)
         yield tuple(window)
-
-# Áp dụng để tính Max Sum như code của bạn:
-arr = [1, 2, 3, 4, 5, 6]
-k = 3
-max_sum = max(sum(w) for w in sliding_window(arr, k))
-print(max_sum) # Kết quả: 15 (tổng của 4, 5, 6)
