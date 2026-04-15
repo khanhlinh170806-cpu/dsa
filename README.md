@@ -37,29 +37,29 @@ dsa/
 └── README.md           # Tài liệu hướng dẫn này
 ```
 ## Các bước cài đặt
-# Bước 1: Clone dự án về máy
+### Bước 1: Clone dự án về máy
 git clone [https://github.com/khanhlinh170806-cpu/dsa.git](https://github.com/khanhlinh170806-cpu/dsa.git)
 
-# Bước 2: Di chuyển vào thư mục dự án
+### Bước 2: Di chuyển vào thư mục dự án
 cd dsa
 
-# Bước 3: Tạo môi trường ảo (Khuyến khích)
+### Bước 3: Tạo môi trường ảo (Khuyến khích)
 python -m venv venv
 
-# Bước 4: Kích hoạt môi trường ảo
-# Trên Windows:
+### Bước 4: Kích hoạt môi trường ảo
+### Trên Windows:
 venv\Scripts\activate
-# Trên macOS/Linux:
+### Trên macOS/Linux:
 source venv/bin/activate
 
-# Bước 5: Cài đặt các thư viện bổ trợ
+### Bước 5: Cài đặt các thư viện bổ trợ
 pip install -r requirements.txt
 
 ## Cách chạy thử nghiệm
-# Chạy tất cả các bài test trong thư mục tests/
+### Chạy tất cả các bài test trong thư mục tests/
 pytest tests/
 
-# Hoặc chạy một file cụ thể trong thư mục src
+### Hoặc chạy một file cụ thể trong thư mục src
 python src/tên_file.py
 
 ## Công nghệ sử dụng
