@@ -1,0 +1,57 @@
+#1 Longest Harmonious Subsequence
+class Solution(object):
+    def findLHS(self, nums):
+        nums.sort()
+        j = 0
+        maxlen = 0
+
+        for i in range(len(nums)):
+            while nums[i] - nums[j] > 1:
+                j+=1
+            if nums[i] - nums[j] == 1:
+                maxlen = max(maxlen,i-j+1)
+        return maxlen
+        
+#2 Minimum Recolors to Get K Consecutive Black Blocks
+class Solution:
+    def minimumRecolors(self, blocks: str, k: int) -> int:
+        # Count 'W' in the initial window
+        count = blocks[:k].count('W')  
+        min_count = count
+        
+        # Slide the window across the string
+        for right in range(k, len(blocks)):
+            if blocks[right] == 'W':
+                count += 1
+            if blocks[right - k] == 'W':
+                count -= 1
+            min_count = min(min_count, count)
+        
+        return min_count
+
+#3 Longest Even Odd Subarray With Threshold
+class Solution:
+    def longestAlternatingSubarray(self, nums, threshold):
+        max_len = 0
+        curr_len = 0
+        
+        for i in range(len(nums)):
+            if nums[i] > threshold:
+                curr_len = 0
+                continue
+            
+            if curr_len == 0:
+                if nums[i] % 2 == 0:
+                    curr_len = 1
+            else:
+                if nums[i] % 2 != nums[i - 1] % 2:
+                    curr_len += 1
+                else:
+                    if nums[i] % 2 == 0:
+                        curr_len = 1
+                    else:
+                        curr_len = 0
+            
+            max_len = max(max_len, curr_len)
+        
+        return max_len 
