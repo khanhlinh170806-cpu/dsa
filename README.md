@@ -1,12 +1,14 @@
 # Data Structures and Algorithms (DSA) - Midterm Project
 
 ##  Tổng quan về dự án
-Dự án này tập trung vào việc nghiên cứu, triển khai và đánh giá các cấu trúc dữ liệu và giải thuật cơ bản. Mục tiêu chính là hiểu rõ cách thức hoạt động của các cấu trúc dữ liệu từ mức độ mã nguồn thấp nhất và ứng dụng chúng để tối ưu hóa hiệu suất bài toán.
+Dự án này là một nghiên cứu chuyên sâu và triển khai thực nghiệm 4 kỹ thuật nền tảng trong cấu trúc dữ liệu và thuật thuật toán: Prefix Sum, Sliding Window, Difference Array và Dynamic Array (Resize). Dự án kết hợp giữa lý thuyết toán học, phân tích độ phức tạp và ứng dụng giải quyết các bài toán thực tế.
 
 **Nội dung chính:**
-- Triển khai thủ công (Manual Implementation) các cấu trúc dữ liệu: Linked List, Stack, Queue, Trees, Graphs.
-- So sánh hiệu năng giữa mã nguồn tự viết và các thư viện sẵn có (`built-in`) của Python.
-- Giải quyết các bài toán thuật toán trên nền tảng **LeetCode** để luyện tập tư duy logic.
+Nghiên cứu & Cài đặt: Triển khai từ đầu (Custom Class) và dùng Built-in Python cho 4 kỹ thuật: Prefix Sum, Sliding Window, Difference Array, Dynamic Array.
+
+Phân tích & Tối ưu: Đánh giá chi tiết Big-O, nền tảng toán học và tư duy tối ưu hóa "What to use" cho từng dạng bài toán cụ thể.
+
+Thực hành & Tổng hợp: Giải quyết bài tập LeetCode, phân tích ứng dụng thực tế và hệ thống hóa toàn bộ nội dung qua báo cáo LaTeX kèm sơ đồ minh họa.
 
 ---
 
@@ -27,14 +29,39 @@ Repository được tổ chức khoa học như sau:
 
 ```text
 dsa/
-├── src/                # Mã nguồn tự triển khai các cấu trúc dữ liệu
-├── built_in/           # Ví dụ về các cấu trúc dữ liệu có sẵn trong Python
-├── Leetcode/           # Lời giải các bài tập thuật toán (Python/Notebook)
-├── tests/              # Bộ mã kiểm thử cho các cấu trúc dữ liệu tự viết
-├── test_built_in/      # Bộ mã kiểm thử cho các thư viện built-in
-├── .gitignore          # Cấu hình các tệp tin không đẩy lên GitHub
-├── requirements.txt    # Danh sách các thư viện cần thiết
-└── README.md           # Tài liệu hướng dẫn này
+│
+├── Leetcode/
+│   ├── Array_resize.ipynb
+│   ├── Difference_array.ipynb
+│   └── prefix_sum.ipynb
+│
+├── built_in/
+│   ├── difference_array.py
+│   ├── prefix_sum.py
+│   ├── sliding_window.py
+│   └── sliding_window copy.py
+│
+├── src/
+│   ├── array.py
+│   ├── difference_array.py
+│   ├── prefix_sum.py
+│   └── sliding_window.py
+│
+├── test_built_in/
+│   ├── __init__.py
+│   ├── test_difference_array.py
+│   ├── test_prefix_sum.py
+│   └── test_sliding_window.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_array.py
+│   ├── test_difference_array.py
+│   ├── test_prefix_sum.py
+│   └── test_sliding_window.py
+│
+├── .gitignore
+└── requirements.txt
 ```
 ## Các bước cài đặt
 ### Bước 1: Clone dự án về máy
