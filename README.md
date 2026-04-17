@@ -1,31 +1,38 @@
 # Data Structures and Algorithms (DSA) - Midterm Project
 
-##  Tổng quan về dự án
-Dự án này là một nghiên cứu chuyên sâu và triển khai thực nghiệm 4 kỹ thuật nền tảng trong cấu trúc dữ liệu và thuật thuật toán: Prefix Sum, Sliding Window, Difference Array và Dynamic Array (Resize). Dự án kết hợp giữa lý thuyết toán học, phân tích độ phức tạp và ứng dụng giải quyết các bài toán thực tế.
+##  Project Overview
+This project is an in-depth study and practical implementation of four fundamental techniques in Data Structures and Algorithms: **Prefix Sum, Sliding Window, Difference Array, and Dynamic Array (Resize)**.
 
-**Nội dung chính:**
-Nghiên cứu & Cài đặt: Triển khai từ đầu (Custom Class) và dùng Built-in Python cho 4 kỹ thuật: Prefix Sum, Sliding Window, Difference Array, Dynamic Array.
+It combines mathematical foundations, time complexity analysis, and real-world problem-solving applications.
 
-Phân tích & Tối ưu: Đánh giá chi tiết Big-O, nền tảng toán học và tư duy tối ưu hóa "What to use" cho từng dạng bài toán cụ thể.
+### **Main Contents**
+- **Research & Implementation**  
+  Implemented both from scratch (custom classes) and using Python built-in features for:
+  - Prefix Sum  
+  - Sliding Window  
+  - Difference Array  
+  - Dynamic Array  
 
-Thực hành & Tổng hợp: Giải quyết bài tập LeetCode, phân tích ứng dụng thực tế và hệ thống hóa toàn bộ nội dung qua báo cáo LaTeX kèm sơ đồ minh họa.
+- **Analysis & Optimization**  
+  Detailed evaluation of Big-O complexity, mathematical foundations, and decision-making strategies ("What to use") for different problem types.
 
----
-
-##  Thông tin thành viên
-Dự án được thực hiện bởi:
-
-| Họ và Tên | Mã Sinh Viên | Contribution |
-|-----------|--------------|---------|
-| Lê Phạm Khánh Linh | [Mã số sinh viên] | -- |
-| Trần Viết Long | [Mã số sinh viên] | -- |
-| Vũ Trần Cát Linh | [Mã số sinh viên] | -- |
-| Phùng Nhật Minh | [Mã số sinh viên] | -- |
+- **Practice & Synthesis**  
+  Solved LeetCode problems, analyzed real-world applications, and summarized all concepts through LaTeX reports with visual diagrams.
 
 ---
 
-##  Cấu trúc thư mục
-Repository được tổ chức khoa học như sau:
+## Team Members
+
+| Full Name | Student ID | Contribution |
+|----------|------------|-------------|
+| Le Pham Khanh Linh | [Student ID] | -- |
+| Tran Viet Long | [Student ID] | -- |
+| Vu Tran Cat Linh | [Student ID] | -- |
+| Phung Nhat Minh | [Student ID] | -- |
+
+---
+
+##  Project Structure
 
 ```text
 dsa/
@@ -62,36 +69,91 @@ dsa/
 │
 ├── .gitignore
 └── requirements.txt
-```
-## Các bước cài đặt
-### Bước 1: Clone dự án về máy
+
+## Project Roadmap and Workflow
+
+The development of this project follows a structured workflow to ensure both theoretical depth and practical implementation:
+
+### 1. Concept Selection & Understanding
+- Select core data structures and techniques
+- Identify key concepts, strengths, weaknesses
+- Compare with alternative approaches
+
+### 2. Research & Theoretical Foundation
+- Study references (CLRS, GeeksforGeeks, etc.)
+- Develop detailed report outline
+- Write **Theory & Concepts**, including:
+  - Core principles
+  - Mathematical foundations
+  - Complexity analysis
+  - **“What to use” mindset** (choosing the right technique for each problem)
+
+### 3. Complexity Analysis
+- Analyze Big-O for all operations
+- Build comparison tables:
+  - Insert / Delete / Peek / Search
+  - Across different implementations
+
+### 4. Implementation
+- Implement from scratch using Python (no external libraries)
+  - Clean class design
+  - Docstrings
+  - Basic test cases
+- Implement versions using Python built-in features
+
+### 5. Applications & Problem Solving
+- Research 3–4 real-world applications:
+  - Problem description
+  - Why the technique fits
+- Solve 4–5 problems (LeetCode / HackerRank):
+  - Mix of Easy & Medium
+  - Provide detailed explanations:
+    - Intuition
+    - Algorithm
+    - Complexity
+    - Code
+
+### 6. Visualization & Documentation
+- Add diagrams:
+  - Data structure visualization
+  - Operation flows (insert / update / query)
+- Label all figures clearly
+- Integrate real-world applications into report
+
+### 7. Finalization
+- Compile full report using LaTeX
+- Write README
+- Write Introduction & Conclusion
+- Test all code (ensure no bugs)
+- Final review and refinement
+
+## Installation Guide
+### Step 1: Clone the repository
 git clone [https://github.com/khanhlinh170806-cpu/dsa.git](https://github.com/khanhlinh170806-cpu/dsa.git)
 
-### Bước 2: Di chuyển vào thư mục dự án
+### Step 2: Navigate to the project directory
 cd dsa
 
-### Bước 3: Tạo môi trường ảo (Khuyến khích)
+### Step 3: Create a virtual environment (recommended)
 python -m venv venv
 
-### Bước 4: Kích hoạt môi trường ảo
-### Trên Windows:
+### BStep 4: Activate the virtual environment
+### On Windows:
 venv\Scripts\activate
-### Trên macOS/Linux:
+### On macOS/Linux:
 source venv/bin/activate
 
-### Bước 5: Cài đặt các thư viện bổ trợ
+### Step 5: Install dependencies
 pip install -r requirements.txt
 
-## Cách chạy thử nghiệm
-### Chạy tất cả các bài test trong thư mục tests/
+## How to Run
+### Run all tests
 pytest tests/
 
-### Hoặc chạy một file cụ thể trong thư mục src
+### Run a specific file
 python src/tên_file.py
 
-## Công nghệ sử dụng
-Ngôn ngữ: Python (Cấu trúc dữ liệu linh hoạt, dễ đọc).
-
-Định dạng: .py và .ipynb (Jupyter Notebook cho việc giải thích thuật toán).
-
-Công cụ: Pytest cho Unit Testing.
+## Technologies Used
+Language: Python
+Formats: .py, .ipynb (Jupyter Notebook for explanations)
+Testing: Pytest (unit testing framework)
