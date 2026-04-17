@@ -69,7 +69,7 @@ dsa/
 │
 ├── .gitignore
 └── requirements.txt
-
+```
 ## Project Roadmap and Workflow
 
 The development of this project follows a structured workflow to ensure both theoretical depth and practical implementation:
