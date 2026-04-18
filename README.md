@@ -25,10 +25,10 @@ It combines theory foundations, time and space complexity analysis, and real-wor
 
 | Full Name | Student ID | Contribution |
 |----------|------------|-------------|
-| Le Pham Khanh Linh | [11245892] | 27.5 |
-| Tran Viet Long | [11245910] | 25.5 |
-| Vu Tran Cat Linh | [11245899] | 21.5 |
-| Phung Nhat Minh | [11245901] | 25.5 |
+| Le Pham Khanh Linh | 11245892 | 27.5 |
+| Tran Viet Long | 11245910 | 25.5 |
+| Vu Tran Cat Linh | 11245899 | 21.5 |
+| Phung Nhat Minh | 11245901 | 25.5 |
 
 ---
 
@@ -150,6 +150,7 @@ The development of this project follows a structured workflow to ensure both the
 ## How to Run
 ### Run all tests
 'pytest tests/'
+
 'pytest test_built_in/'
 ### Run a specific file
 'python src/file_name.py'
