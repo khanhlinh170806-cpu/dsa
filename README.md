@@ -1,9 +1,9 @@
 # Data Structures and Algorithms (DSA) - Midterm Project
 
 ##  Project Overview
-This project is an in-depth study and practical implementation of four fundamental techniques in Data Structures and Algorithms: **Prefix Sum, Sliding Window, Difference Array, and Dynamic Array (Resize)**.
+This project provides a comprehensive technical analysis of Array time and space optimization, aiming to approach numerous problems in the most efficient way. It focuses on advanced algorithmic paradigms: **Prefix Sum, Sliding Window, Difference Array, and Core Array operations**.
 
-It combines mathematical foundations, time complexity analysis, and real-world problem-solving applications.
+It combines theory foundations, time and space complexity analysis, and real-world problem-solving applications.
 
 ### **Main Contents**
 - **Research & Implementation**  
@@ -25,10 +25,10 @@ It combines mathematical foundations, time complexity analysis, and real-world p
 
 | Full Name | Student ID | Contribution |
 |----------|------------|-------------|
-| Le Pham Khanh Linh | [Student ID] | -- |
-| Tran Viet Long | [Student ID] | -- |
-| Vu Tran Cat Linh | [Student ID] | -- |
-| Phung Nhat Minh | [Student ID] | -- |
+| Le Pham Khanh Linh | [11245892] | 27.5 |
+| Tran Viet Long | [11245910] | 25.5 |
+| Vu Tran Cat Linh | [11245899] | 21.5 |
+| Phung Nhat Minh | [11245901] | 25.5 |
 
 ---
 
@@ -40,13 +40,14 @@ dsa/
 ├── Leetcode/
 │   ├── Array_resize.ipynb
 │   ├── Difference_array.ipynb
-│   └── prefix_sum.ipynb
+│   └── Prefix_sum.ipynb
+|   └── Sliding_window.ipynb
 │
 ├── built_in/
 │   ├── difference_array.py
 │   ├── prefix_sum.py
 │   ├── sliding_window.py
-│   └── sliding_window copy.py
+│   
 │
 ├── src/
 │   ├── array.py
@@ -137,7 +138,7 @@ cd dsa
 ### Step 3: Create a virtual environment (recommended)
 python -m venv venv
 
-### BStep 4: Activate the virtual environment
+### Step 4: Activate the virtual environment
 ### On Windows:
 venv\Scripts\activate
 ### On macOS/Linux:
