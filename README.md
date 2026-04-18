@@ -150,7 +150,7 @@ pip install -r requirements.txt
 ## How to Run
 ### Run all tests
 pytest tests/
-
+pytest test_built_in/
 ### Run a specific file
 python src/tên_file.py
 
