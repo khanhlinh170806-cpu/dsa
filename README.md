@@ -25,10 +25,10 @@ It combines theory foundations, time and space complexity analysis, and real-wor
 
 | Full Name | Student ID | Contribution |
 |----------|------------|-------------|
-| Le Pham Khanh Linh | [Student ID] | -- |
-| Tran Viet Long | [Student ID] | -- |
-| Vu Tran Cat Linh | [Student ID] | -- |
-| Phung Nhat Minh | [Student ID] | -- |
+| Le Pham Khanh Linh | [11245892] | 27.5 |
+| Tran Viet Long | [11245910] | 25.5 |
+| Vu Tran Cat Linh | [11245899] | 21.5 |
+| Phung Nhat Minh | [11245901] | 25.5 |
 
 ---
 
