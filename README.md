@@ -130,29 +130,29 @@ The development of this project follows a structured workflow to ensure both the
 
 ## Installation Guide
 ### Step 1: Clone the repository
-git clone [https://github.com/khanhlinh170806-cpu/dsa.git](https://github.com/khanhlinh170806-cpu/dsa.git)
+'git clone [https://github.com/khanhlinh170806-cpu/dsa.git](https://github.com/khanhlinh170806-cpu/dsa.git)'
 
 ### Step 2: Navigate to the project directory
-cd dsa
+'cd dsa'
 
 ### Step 3: Create a virtual environment (recommended)
-python -m venv venv
+'python -m venv venv'
 
 ### Step 4: Activate the virtual environment
 ### On Windows:
-venv\Scripts\activate
+'venv\Scripts\activate'
 ### On macOS/Linux:
-source venv/bin/activate
+'source venv/bin/activate'
 
 ### Step 5: Install dependencies
-pip install -r requirements.txt
+'pip install -r requirements.txt'
 
 ## How to Run
 ### Run all tests
-pytest tests/
-pytest test_built_in/
+'pytest tests/'
+'pytest test_built_in/'
 ### Run a specific file
-python src/tên_file.py
+'python src/file_name.py'
 
 ## Technologies Used
 Language: Python
