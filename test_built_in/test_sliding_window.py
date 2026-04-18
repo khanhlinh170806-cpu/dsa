@@ -1,6 +1,7 @@
 import pytest
-from built_in.sliding_window import sliding_window
+from built_in.sliding_window import Windowing
 import random
+
 
 def brute_windows(arr, k):
     """
@@ -17,7 +18,7 @@ def test_basic():
     arr = [1, 2, 3, 4]
     k = 2
 
-    assert list(sliding_window(arr, k)) == [(1, 2), (2, 3), (3, 4)]
+    assert list(Windowing.sliding(arr, k)) == [(1, 2), (2, 3), (3, 4)]
 
 
 def test_sum_equivalence():
@@ -28,7 +29,7 @@ def test_sum_equivalence():
     arr = [1, 2, 3, 4, 5]
     k = 3
 
-    window_sums = [sum(w) for w in sliding_window(arr, k)]
+    window_sums = [sum(w) for w in Windowing.sliding(arr, k)]
     brute = [sum(arr[i:i+k]) for i in range(len(arr) - k + 1)]
 
     assert window_sums == brute
@@ -45,7 +46,7 @@ def test_randomized():
 
         arr = [random.randint(-10, 10) for _ in range(n)]
 
-        assert list(sliding_window(arr, k)) == brute_windows(arr, k)
+        assert list(Windowing.sliding(arr, k)) == brute_windows(arr, k)
 
 
 def test_edge_case_k_greater_than_n():
@@ -56,7 +57,7 @@ def test_edge_case_k_greater_than_n():
     arr = [1]
     k = 2
 
-    assert list(sliding_window(arr, k)) == []
+    assert list(Windowing.sliding(arr, k)) == []
 
 
 def test_single_window():
@@ -67,4 +68,4 @@ def test_single_window():
     arr = [1, 2, 3]
     k = 3
 
-    assert list(sliding_window(arr, k)) == [(1, 2, 3)]
+    assert list(Windowing.sliding(arr, k)) == [(1, 2, 3)]
