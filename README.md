@@ -138,7 +138,7 @@ cd dsa
 ### Step 3: Create a virtual environment (recommended)
 python -m venv venv
 
-### BStep 4: Activate the virtual environment
+### Step 4: Activate the virtual environment
 ### On Windows:
 venv\Scripts\activate
 ### On macOS/Linux:
